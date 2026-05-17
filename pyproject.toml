@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "multi-rep-set"
+version = "1.0.0"
+description = "Multi-Language Code Checker — Bash, Python, JS, JSON, YAML, Markdown. 0 dependencies, 0 token costs."
+license = {text = "MIT"}
+authors = [{name = "David Miko", email = "mikodavid@web.de"}]
+readme = "README.md"
+requires-python = ">=3.10"
+
+[project.scripts]
+multi-rep-set = "multi_rep_set:main"
+check = "multi_rep_set:main"
