@@ -8,4 +8,5 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - run: python -m py_compile src/multi_rep_set.py
+      - run: pip install -e .
+      - run: python -c "from multi_rep_set import main; print('OK')"
